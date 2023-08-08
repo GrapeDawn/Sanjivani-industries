@@ -25,6 +25,11 @@ font-family: 'Lato', sans-serif;
 .nav-container {
     display: flex;
     justify-content: space-between;
+    position: fixed; 
+  top: 0; 
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(240, 240, 240);
 }
 
 .logo img {
