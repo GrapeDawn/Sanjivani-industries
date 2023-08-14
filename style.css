@@ -154,13 +154,76 @@ font-family: 'Lato', sans-serif;
 
 }
 .container{
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 /* style for home page --------- */
 
 
-.carousel-container {
+/* * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;} */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 50vw;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #070707;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* .carousel-container {
     width: 80%;
     height: 50vh;
     margin: 0 auto;
@@ -173,9 +236,8 @@ font-family: 'Lato', sans-serif;
 }
 
 .carousel img {
-    /* width: 100%; */
     height: 100%;
-}
+} */
 
 
 .hero-section {
@@ -388,6 +450,7 @@ font-family: 'Lato', sans-serif;
     grid-area: 3 / 3 / 5 / 5;
     background-size: cover;
     background-position: center;
+    padding: 2rem;
 }
 
 .about-div3 {
@@ -475,6 +538,9 @@ font-family: 'Lato', sans-serif;
         padding: 1rem;
         font-size: 2rem!important;
     }
+    .map-container{
+        margin: 1rem 0;
+    }
 }
 
 .cont-con {
@@ -493,10 +559,16 @@ font-family: 'Lato', sans-serif;
 .form {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 60%;
     margin: 0 1rem;
+    border-radius: 8px;
+    background-color: #888888;
+    padding: 1rem;
 }
+.form:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 
 .form input {
     border: 1px solid black;
@@ -504,6 +576,7 @@ font-family: 'Lato', sans-serif;
     margin: 1rem;
     height: 8vh;
     padding: 0 1rem;
+    border-radius: 8px;
 
 }
 
@@ -569,8 +642,12 @@ font-family: 'Lato', sans-serif;
     grid-template-rows: 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    width: 90%;
+    width: 100%;
     margin: auto;
+    margin: 4rem 0;
+    padding: 2rem;
+    background-color: #161616;
+    box-shadow: 0px 10px 5px gray;
 }
 
 .con-div1 {
@@ -595,6 +672,28 @@ font-family: 'Lato', sans-serif;
 .con-div4 {
     text-align: center;
 }
+
+.con-div1 img,
+.con-div2 img,
+.con-div3 img,
+.con-div4 img {
+    filter: invert(100%);
+}
+.con-div1 h3,
+.con-div2 h3,
+.con-div3 h3,
+.con-div4 h3{
+    color: white;
+}
+.con-div1 p,
+.con-div2 p,
+.con-div3 p,
+.con-div4 p{
+    color: white;
+}
+
+
+
 
 .icon {
     width: 2.5rem;
@@ -675,11 +774,16 @@ font-family: 'Lato', sans-serif;
 }
 
 .card {
-    border: 1px solid black;
     margin: 10px 2rem;
     height: 98%;
-    background-color: #f5f5f5;
+    background-color: #ebebeb;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 
 .card h2 {
     margin: 8px 1rem;
@@ -698,13 +802,15 @@ font-family: 'Lato', sans-serif;
 
 
 .card-img {
-    border: 1px solid black;
     margin: 8px;
+    
 }
 
 .card-img img {
-    width: 100%;
+    width: 90%;
     object-fit: cover;
+    margin: 1rem;
+    border-radius: 8px;
 }
 
 .card-div1 {
@@ -736,6 +842,7 @@ font-family: 'Lato', sans-serif;
     grid-area: 3 / 3 / 5 / 4;
     width: 100%;
 }
+
 
 /* product info page  */
 
