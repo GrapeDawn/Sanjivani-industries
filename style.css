@@ -96,6 +96,7 @@ font-family: 'Lato', sans-serif;
     background-color: #f0f0f0;
     padding-top: 50px;
     transition: left 0.3s ease;
+    z-index: 1000;
 }
 
 @media screen and (max-width: 767px) {
@@ -151,6 +152,9 @@ font-family: 'Lato', sans-serif;
     }
 
 
+}
+.container{
+    margin-top: 6rem;
 }
 
 /* style for home page --------- */
@@ -465,12 +469,24 @@ font-family: 'Lato', sans-serif;
     .con-div4 p {
         display: flex;
     }
+    .cont-head{
+        color: var(--primary-color);
+        text-align: center;
+        padding: 1rem;
+        font-size: 2rem!important;
+    }
 }
 
 .cont-con {
     display: flex;
     justify-content: center;
     margin: 1rem;
+}
+.cont-head{
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
 }
 
 
